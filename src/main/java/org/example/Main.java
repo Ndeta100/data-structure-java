@@ -21,6 +21,23 @@ public class Main {
             System.out.println(color);
         }
         Arrays.stream(colors).forEach(System.out::println);
+        System.out.println();
+        System.out.println();
+        System.out.println("Dynamic arrays");
+        //Dynamic array
+        DynamicArray dynamicArray =new DynamicArray(5);
+        dynamicArray.add("A");
+        dynamicArray.add("B");
+        dynamicArray.add("C");
+        dynamicArray.add("D");
+        dynamicArray.add("E");
+        dynamicArray.insert(0,"X");
+        dynamicArray.delete("A");
+      System.out.println(dynamicArray.search("B"));
+        System.out.println(dynamicArray.isEmpty());
+        System.out.println(dynamicArray);
+        System.out.println(dynamicArray.size);
+        System.out.println(dynamicArray.capacity);
 
     }
 }
